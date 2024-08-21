@@ -271,7 +271,56 @@ article.active {
 }
 
 
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.btn {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
+.btn-linkedin {
+  color: #0072b1;
+}
+
+.btn-linkedin:hover {
+  background-color: #0072b1;
+  color: #fff;
+}
+
+.btn-download-cv {
+  color: #4CAF50;
+}
+
+.btn-download-cv:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* make it responsive */
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 10px 0;
+  }
+}
 
 
 /*-----------------------------------*\
